@@ -1,6 +1,8 @@
 import React from 'react';
 
-const Logo = ({ className }) => (
+type LogoProps = { className?: string };
+
+const Logo = ({ className }: LogoProps) => (
   <svg className={className} width="82" height="89" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g filter="url(#filter0_d)">
       <path fillRule="evenodd" clipRule="evenodd" d="M41 70c12.15 0 22-9.85 22-22s-9.85-22-22-22-22 9.85-22 22 9.85 22 22 22z" fill="#000" fillOpacity=".01"/>

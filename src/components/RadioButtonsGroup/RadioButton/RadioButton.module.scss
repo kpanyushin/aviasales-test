@@ -1,0 +1,23 @@
+.root {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  border: 1px solid #DFE5EC;
+  background-color: #fff; // change to var
+  color: #4A4A4A;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+
+  &:hover {
+    border-color: #2196f3;
+  }
+
+  &.isActive {
+    border: 1px solid transparent;
+    background-color: #2196f3; // change to var
+    color: #fff;
+  }
+}
