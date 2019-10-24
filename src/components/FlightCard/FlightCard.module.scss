@@ -25,6 +25,10 @@
   margin: 20px 0 10px;
   display: flex;
   text-align: left;
+
+  &:last-child {
+    margin: 0;
+  }
 }
 
 .column {
