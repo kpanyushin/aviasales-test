@@ -6,15 +6,17 @@ import styles from './RadioButton.module.scss';
 type RadioButtonProps = {
   className?: string,
   isActive: boolean,
+  message: string,
 };
 
 const RadioButton = ({
   className,
   isActive,
+  message,
 }: RadioButtonProps) => (
   <div className={classnames(styles.root, className, { [styles.isActive]: isActive })}>
-    RadioButton
+    {message}
   </div>
 );
 
-export default RadioButton;
+export default React.memo(RadioButton);

@@ -5,12 +5,20 @@ import RadioButton from './RadioButton';
 
 import styles from './RadioButtonsGroup.module.scss';
 
-type RadioButtonsGroup = { className?: string };
+type RadioButtonsGroupProps = { className?: string };
 
-const RadioButtonsGroup = ({ className }: RadioButtonsGroup) => (
+const radioGroup: Array<string> = ['Самый дешевый', 'самый быстрый'];
+
+const RadioButtonsGroup = ({ className }: RadioButtonsGroupProps) => (
   <div className={classnames(styles.root, className)}>
-    <RadioButton isActive={false} />
-    <RadioButton className={styles.radioButton} isActive />
+    {radioGroup.map((item, index) => (
+      <RadioButton
+        key={item}
+        className={styles.radioButton}
+        message={item}
+        isActive={index === 0}
+      />
+    ))}
   </div>
 );
 
