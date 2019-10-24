@@ -8,6 +8,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: $color-tundora;
+  font-size: 12px;
 }
 
 code {
@@ -17,4 +18,8 @@ code {
 
 ul {
   padding: 0;
+}
+
+li {
+  list-style-type: none;
 }

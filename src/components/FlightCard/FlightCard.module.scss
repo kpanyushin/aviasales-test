@@ -1,0 +1,48 @@
+@import '../../variables.scss';
+
+.root {
+  width: 500px;
+  height: auto;
+  padding: 20px 50px 20px 20px;
+  border-radius: 5px;
+  background-color: $color-white;
+  box-shadow: 0px 2px 8px $color-black-10;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: 600;
+  color: $color-dodger-blue;
+}
+
+.row {
+  margin: 20px 0 10px;
+  display: flex;
+  text-align: left;
+}
+
+.column {
+  width: 33%;
+}
+
+.headerRow {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  color: $color-gull-gray;
+  line-height: 18px;
+}
+
+// .stops {
+//   display: flex;
+// }
+
+// .stop {
+//   margin-left: ;
+// }
